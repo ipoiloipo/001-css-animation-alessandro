@@ -1,0 +1,37 @@
+body{
+    background-image: url(bg.png);
+    background-size: cover;
+    min-height: 100vh;
+  }
+  
+  .flappy-bird{
+    position:absolute;
+    width: 150px;
+    left:10%;
+    top:30%;
+    
+    animation: birdAnimation 1s infinite;
+  }
+  
+  .flappy-bird img{
+    width: 100%;
+  }
+  
+  @keyframes birdAnimation{
+    0%{
+      left:90%;
+      top:39%;
+      transform: rotate(30deg);
+    }
+    30%{
+      left:60%;
+      top:90%;
+      transform: rotate(-30deg);
+  
+    }
+    100%{
+      left:50%;
+      transform: rotate(30deg);
+      top:70%;
+    }
+  }
